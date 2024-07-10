@@ -1,48 +1,31 @@
-# Frontend Mentor - Interactive rating component solution
-
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+# Interactive Rating Component
 
 ## Overview
+The Interactive Rating Component project is a user feedback system built using HTML, CSS, and JavaScript. This component allows users to rate their experience using a simple 5-star rating system. After submitting their rating, users receive a thank-you message along with their selected rating displayed.
 
-### The challenge
+## Features
+- **Rating System**
+  - Users can select from 1 to 5 stars to rate their experience.
+  
+- **Feedback Collection**
+  - Collects user feedback to help improve service offerings.
 
-Users should be able to:
+- **Dynamic UI**
+  - Changes UI states dynamically between rating selection and thank-you message upon submission.
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- **Responsive Design**
+  - Designed with responsiveness in mind to ensure compatibility across different devices and screen sizes.
 
-### Screenshot
+## Code Structure
+- **HTML**: Defines the structure of the rating component, including the rating buttons, submission button, and thank-you message.
+- **CSS**: Custom styles for layout and visual appearance.
+- **JavaScript**: Handles user interactions such as rating selection and state management.
 
-![](./screenshot.jpg)
+## Potential Improvements
+- Store ratings in a database for analytics.
+- Enhance UI with animations or transitions.
+- Allow users to leave comments or suggestions along with their rating.
 
-### Links
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Solution URL:](https://www.frontendmentor.io/solutions/interactiveratingcomponentmain-BkTjQzir5)
-- [Live Site URL:](https://pharaohmak.github.io/interactive-rating-component-main/)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-
-## Author
-
-- Website - [Makram Ibrahim](https://www.sleepingpharaoh.com)
-- Frontend Mentor - [@pharaohmak](https://www.frontendmentor.io/profile/pharaohmak)
-- Twitter - [@pharaohmak](https://www.twitter.com/pharaohmak)
