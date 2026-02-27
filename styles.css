@@ -1,0 +1,119 @@
+  :root {
+      --orange: hsl(25, 97%, 53%);
+      --white: hsl(0, 0%, 100%);
+      --light-grey: hsl(217, 12%, 63%);
+      --medium-grey: hsl(216, 12%, 54%);
+      --dark-blue: hsl(213, 19%, 18%);
+      --very-dark-blue: hsl(216, 12%, 8%);
+    }
+
+    body {
+      background-color: var(--very-dark-blue);
+      font-family: 'Overpass', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: radial-gradient(circle at top, #232a34, #181e27);
+      padding: 32px;
+      border-radius: 30px;
+      width: 100%;
+      max-width: 400px;
+      color: var(--white);
+    }
+
+    .star-icon {
+      background-color: #262e38;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: var(--light-grey);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .rating-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    .rate-btn {
+      background-color: #262e38;
+      color: var(--medium-grey);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .rate-btn:hover {
+      background-color: var(--light-grey);
+      color: var(--white);
+    }
+
+    .rate-btn.active {
+      background-color: var(--orange);
+      color: var(--white);
+    }
+
+    .submit-btn {
+      background-color: var(--orange);
+      color: var(--white);
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: var(--white);
+      color: var(--orange);
+    }
+
+    /* Thank You State Styles */
+    .thank-you-state {
+      text-align: center;
+      display: none;
+    }
+
+    .thank-you-img {
+      margin-bottom: 32px;
+    }
+
+    .selection-tag {
+      background-color: #262e38;
+      color: var(--orange);
+      padding: 6px 20px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 32px;
+      font-size: 15px;
+    }
+
+    .hidden {
+      display: none;
+    }

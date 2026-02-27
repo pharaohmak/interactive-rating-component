@@ -1,49 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Rating Component</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+  <div class="card" id="rating-state">
+    <div class="star-icon">
+      <svg width="17" height="16" xmlns="http://www.w3.org">
+        <path
+          d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .428 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846a.772.772 0 0 1 .428-1.316l4.45-.647c.25-.036.468-.194.58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+          fill="#FC7614""" ) />>
+      </svg>
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+      offering!</p>
 
-  How did we do?
+    <div class="rating-container">
+      <button class="rate-btn">1</button>
+      <button class="rate-btn">2</button>
+      <button class="rate-btn">3</button>
+      <button class="rate-btn">4</button>
+      <button class="rate-btn">5</button>
+    </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <button id="submit" class="submit-btn">SUBMIT</button>
   </div>
+
+  <div class="card thank-you-state" id="thank-you-state">
+    <div class="thank-you-img">
+      <svg width="162" height="108" xmlns="http://www.w3.org">
+        <g fill="none" fill-rule="evenodd">
+          <path
+            d="M110.158 97.433c0 5.836-4.731 10.567-10.567 10.567H10.567C4.731 108 0 103.269 0 97.433V10.567C0 4.731 4.731 0 10.567 0h89.024c5.836 0 10.567 4.731 10.567 10.567v86.866Z"
+            fill="#232A34""" ) />>
+          <path
+            d="M55.079 38.64H11.016a1 1 0 1 1 0-2H55.08a1 1 0 0 1 0 2Zm0 6H11.016a1 1 0 1 1 0-2H55.08a1 1 0 1 1 0 2Zm0 6H11.016a1 1 0 1 1 0-2H55.08a1 1 0 1 1 0 2Zm0 6H11.016a1 1 0 1 1 0-2H55.08a1 1 0 1 1 0 2Z"
+            fill="#2E3742""" ) />>
+          <path
+            d="M100.28 102.4H10.8a5.4 5.4 0 0 1-5.4-5.4V11.8a5.4 5.4 0 0 1 5.4-5.4h89.48a5.4 5.4 0 0 1 5.4 5.4v85.2a5.4 5.4 0 0 1-5.4 5.4ZM10.8 8.4a3.4 3.4 0 0 0-3.4 3.4v85.2a3.4 3.4 0 0 0 3.4 3.4h89.48a3.4 3.4 0 0 0 3.4-3.4V11.8a3.4 3.4 0 0 0-3.4-3.4H10.8Z"
+            fill="#2E3742""" ) />>
+          <path
+            d="M152.012 30.686c0 5.45-4.417 9.867-9.866 9.867H69.454c-5.45 0-9.867-4.417-9.867-9.867V9.867C59.587 4.418 64.004 0 69.454 0h72.692c5.449 0 9.866 4.417 9.866 9.867v20.819Z"
+            fill="#232A34""" ) />>
+          <path
+            d="M142.146 36.553H69.454a5.867 5.867 0 0 1-5.867-5.867V9.867A5.867 5.867 0 0 1 69.454 4h72.692a5.867 5.867 0 0 1 5.866 5.867v20.819a5.867 5.867 0 0 1-5.866 5.867Zm-72.692-28.553a1.867 1.867 0 0 0-1.867 1.867v20.819c0 1.03.837 1.867 1.867 1.867h72.692c1.03 0 1.866-.837 1.866-1.867V9.867a1.867 1.867 0 0 0-1.866-1.867H69.454Z"
+            fill="#2E3742""" ) />>
+          <path d="M125.753 23.32h-32.96c-1.104 0-2-.895-2-2s.896-2 2-2h32.96c1.104 0 2 .895 2 2s-.896 2-2 2Z"
+            fill="#3D4755""" ) />>
+          <path
+            d="M102.7 87.893 72.8 73.01c-3.13-1.56-4.4-5.368-2.841-8.498L83.67 36.33a6.34 6.34 0 0 1 8.498-2.842l29.894 14.882a6.34 6.34 0 0 1 2.842 8.498l-13.712 28.182a6.34 6.34 0 0 1-8.497 2.842Z"
+            fill="#2E3742""" ) />>
+          <path
+            d="M102.04 84.706 72.146 69.824a3.17 3.17 0 0 1-1.42-4.25l13.711-28.182a3.17 3.17 0 0 1 4.25-1.42l29.893 14.882a3.17 3.17 0 0 1 1.42 4.25l-13.711 28.182a3.17 3.17 0 0 1-4.249 1.414Z"
+            fill="#3D4755""" ) />>
+          <circle fill="#FC7614" cx="106.84" cy="57.518" r="10.8""" ) />>
+          <circle fill="#FFF" opacity=".2" cx="106.84" cy="57.518" r="10.8""" ) />>
+          <path
+            d="M106.84 51.585a.72.72 0 0 1 .72.72v4.493h4.493a.72.72 0 1 1 0 1.44H107.56v4.493a.72.72 0 0 1-1.44 0V58.24h-4.493a.72.72 0 1 1 0-1.44h4.493v-4.493a.72.72 0 0 1 .72-.72Z"
+            fill="#FFF""" ) />>
+          <path
+            d="M161.427 94.757c0 7.314-5.929 13.243-13.243 13.243h-25.243c-7.314 0-13.243-5.929-13.243-13.243V75.243C109.698 67.93 115.627 62 122.94 62h25.244c7.314 0 13.243 5.93 13.243 13.243v19.514Z"
+            fill="#2E3742""" ) />>
+          <path
+            d="M148.184 108h-25.243a13.258 13.258 0 0 1-13.243-13.243V75.243A13.258 13.258 0 0 1 122.941 62h25.243a13.258 13.258 0 0 1 13.243 13.243v19.514A13.258 13.258 0 0 1 148.184 108Zm-25.243-44c-6.199 0-11.243 5.044-11.243 11.243v19.514c0 6.199 5.044 11.243 11.243 11.243h25.243c6.199 0 11.243-5.044 11.243-11.243V75.243c0-6.199-5.044-11.243-11.243-11.243h-25.243Z"
+            fill="#3D4755""" ) />>
+          <path
+            d="M139.113 88.08a.8.8 0 0 1-.8-.8v-4.993h-4.993a.8.8 0 1 1 0-1.6h4.993V75.694a.8.8 0 1 1 1.6 0v4.993h4.993a.8.8 0 1 1 0 1.6h-4.993v4.993a.8.8 0 0 1-.8.8Z"
+            fill="#FC7614""" ) />>
+        </g>
+      </svg>
+    </div>
+    <div class="selection-tag">
+      You selected <span id="selected-rating">-</span> out of 5
+    </div>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+      touch!</p>
+  </div>
+
+  <script src="scrpit.js"></script>
 </body>
+
 </html>
